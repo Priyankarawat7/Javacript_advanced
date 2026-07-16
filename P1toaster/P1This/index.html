@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add User</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#111111] text-white min-h-screen">
+
+  <!-- Container -->
+  <div class="max-w-6xl mx-auto py-10 px-4">
+
+    <!-- Form -->
+    <div class="max-w-md mx-auto bg-[#242424] rounded-xl shadow-lg p-6 border border-gray-700">
+
+      <h2 class="text-3xl font-bold text-center mb-6">
+        Add User
+      </h2>
+
+      <form class="space-y-4">
+
+        <div>
+          <label class="block text-sm mb-1">Name</label>
+          <input
+            type="text"
+            placeholder="Enter name" name="name" id="name"
+            class="w-full bg-[#333] border border-gray-600 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+          >
+        </div>
+
+        <div>
+          <label class="block text-sm mb-1">Role</label>
+          <input
+            type="text"
+            placeholder="Enter role" name="role" id="role"
+            class="w-full bg-[#333] border border-gray-600 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+          >
+        </div>
+
+        <div>
+          <label class="block text-sm mb-1">Bio</label>
+          <textarea
+            rows="3"
+            placeholder="Write bio..." name="bio" id="bio"
+            class="w-full bg-[#333] border border-gray-600 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+          ></textarea>
+        </div>
+
+        <div>
+          <label class="block text-sm mb-1">Photo URL</label>
+          <input
+            type="text"
+            placeholder="Enter image URL" id="photo"
+            class="w-full bg-[#333] border border-gray-600 rounded px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+          >
+        </div>
+
+        <button
+          class="w-full bg-gray-700 hover:bg-blue-600 duration-300 py-2 rounded font-semibold"
+        >
+          Submit
+        </button>
+
+      </form>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid md:grid-cols-3 gap-8 mt-12">
+
+      <!-- Card 1 -->
+      <div class="bg-[#242424] border border-gray-700 rounded-xl p-6 text-center hover:scale-105 duration-300 shadow-lg">
+
+        <img
+          src="https://randomuser.me/api/portraits/men/32.jpg"
+          class="w-24 h-24 rounded-full mx-auto border-4 border-gray-600 object-cover"
+        >
+
+        <h3 class="mt-4 text-xl font-bold">
+          John Doe
+        </h3>
+
+        <p class="text-blue-400 text-sm">
+          Frontend Developer
+        </p>
+
+        <p class="text-gray-300 mt-3 text-sm">
+          Loves building beautiful UIs and learning new technologies.
+        </p>
+
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#242424] border border-gray-700 rounded-xl p-6 text-center hover:scale-105 duration-300 shadow-lg">
+
+        <img
+          src="https://randomuser.me/api/portraits/women/44.jpg"
+          class="w-24 h-24 rounded-full mx-auto border-4 border-gray-600 object-cover"
+        >
+
+        <h3 class="mt-4 text-xl font-bold">
+          Jane Smith
+        </h3>
+
+        <p class="text-green-400 text-sm">
+          Backend Engineer
+        </p>
+
+        <p class="text-gray-300 mt-3 text-sm">
+          Enjoys solving complex problems and optimizing APIs.
+        </p>
+
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#242424] border border-gray-700 rounded-xl p-6 text-center hover:scale-105 duration-300 shadow-lg">
+
+        <img
+          src="https://randomuser.me/api/portraits/men/76.jpg"
+          class="w-24 h-24 rounded-full mx-auto border-4 border-gray-600 object-cover"
+        >
+
+        <h3 class="mt-4 text-xl font-bold">
+          Alex Lee
+        </h3>
+
+        <p class="text-yellow-400 text-sm">
+          UI/UX Designer
+        </p>
+
+        <p class="text-gray-300 mt-3 text-sm">
+          Passionate about user experience and clean design.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
