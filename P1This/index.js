@@ -15,21 +15,29 @@ const userManager={
     submitForm: function(e)
     {
         e.preventDefault();
-        console.log("form submitted");
-        console.log(this);
+       console.log("form submitted");
+       // console.log(this);
+        this.addUser();
 
-        this.users.push({
+    },
+    addUser: function()
+    {
+         this.users.push({
             name:username.value,
             role:role.value,
             bio:bio.value,
             photo:photo.value
         })
-        
+
+         console.log(this);
         
 
+        form.reset();
+
     },
-    addUser: function()
+    renderUi: function()
     {
+        this.users.forEach()
 
     },
     removeUser: function()
