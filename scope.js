@@ -20,7 +20,7 @@
 
 //global scope -poore code mai khin bhi use ho sakti h
 //var a= 12;
-//if your code is out of the curly braces so it is calles global scope
+//if your code is out of the curly braces so it is called global scope
 
 
 //block scope== sirf {} curly braces mai hi use ho sakti h
@@ -42,15 +42,11 @@
 //     //console.log(a);
 //     let b=34;
 //     console.log(x); 
-
 //     function def()
 //     {
 //         console.log(b);
-        
-
 //     }
-//     //def();
-    
+//     //def();    
 // }
 
 // ab();
